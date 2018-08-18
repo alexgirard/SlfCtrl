@@ -1,0 +1,26 @@
+{
+  "name": "SlfCtrl",
+  "description": "Helps you manage your time as long as you have some self control... ",
+  "version": "1.0",
+  "permissions": [
+     "webRequestBlocking",
+     "webRequest",
+     "activeTab",
+     "tabs",
+     "http://*/*",
+     "https://*/*",
+     "tabs",
+     "storage"
+  ],
+  "background" : {
+    "scripts":  [
+      "js/background.js"
+    ]
+  },
+  //comment
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}

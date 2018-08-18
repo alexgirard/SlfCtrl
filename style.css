@@ -1,0 +1,125 @@
+/* 
+	style.css
+	-> css styling
+*/
+
+html, body, section{
+  height: 100vh;
+  font-family : Roboto;
+  background-color: white;
+}
+
+::selection {
+  background: rgba(66, 188, 244, 0.4);;
+}
+
+div{ font-family : Roboto; }
+
+body{ padding: 50px; }
+
+article{
+	position: relative;
+  top: 40%;
+  text-align: center;
+  transform: translate(0, -50%);
+  padding: 1rem;
+}
+
+
+header {
+  text-align: center;
+  font-weight: 700;
+  color: #999999;
+  font-size : 2em;
+  letter-spacing : 1.2px;	
+}
+
+
+p {
+  /*padding : 20px;*/
+  text-align: center;
+  font-weight: 700;
+  color: #999999;
+  font-size : 1em;
+  letter-spacing : 1.2px;	
+}
+
+time {
+	color: black !important;
+  font-weight: 400;
+  font-size: 1.2em;
+  line-height: 26px;
+  text-align: center;
+  vertical-align: middle;
+  padding : 20px;
+}
+
+#total{
+	font-size: 1.5em !important;
+}
+
+input{
+	margin-bottom: 10px;
+	margin-right: 8px;
+	margin-left: 8px;
+	font-size: 1.5em !important;
+}
+
+input[type=text], select {
+    width: 35%;
+    height: 45px;
+    font-weight: lighter;
+    font-size: 1.5em;
+    /*background-color: #f0f0f0;*/
+    color: #808080;
+    padding: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #808080;
+    font-size: 1em;
+    text-align: center;
+}
+
+input[type=submit] {
+    width: 71%;
+    height: 45px;
+    font-weight: lighter;
+    background-color: #999999;
+    color: white;
+    font-size: 1.5em;
+    padding: 0;
+    border: none;
+    font-size: 1em;
+    text-align: center;
+}
+
+input[type=submit]:hover {
+    background-color: rgba(66, 188, 244, 0.4);
+    color: #808080;
+}
+
+input[type=text]:focus {
+    outline: none;
+    border-bottom: 2px solid #42bcf4;
+}
+
+/*
+input[type=submit]:focus {
+    border: 4px solid rgba(66, 188, 244, 0.4);
+    color: #42bcf4;
+}
+*/
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #d9d9d9;
+    opacity: 1;
+    font-weight: lighter;
+}
